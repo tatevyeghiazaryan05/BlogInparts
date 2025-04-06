@@ -13,6 +13,8 @@ from users import users_router
 from post import posts_router
 from auth import users_auth_router
 from comments import comment_router
+from my_account import account_router
+
 
 while True:
     try:
@@ -43,3 +45,4 @@ app.include_router(users_auth_router)
 app.include_router(users_router)
 app.include_router(posts_router)
 app.include_router(comment_router)
+app.include_router(account_router)
